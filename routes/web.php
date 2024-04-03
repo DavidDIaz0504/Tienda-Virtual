@@ -22,4 +22,7 @@ Route::get('/detail', function () {
     return view('detail');
 });
 
+Route::get('/cart', function () {
+    return view('cart');
+});
 Route::get('/products', [productController::class, 'index']);
